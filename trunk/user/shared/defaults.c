@@ -198,7 +198,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_radio_x", "1" },			/* Enable (1) or disable (0) radio */
 	{ "wl_IgmpSnEnable", "1" },
 	{ "wl_TxPower", "100" },
-	{ "wl_TxBurst", "1" },
+	{ "wl_TxBurst", "0" },
 	{ "wl_PktAggregate", "1" },
 	{ "wl_APSDCapable", "0" },
 	{ "wl_HT_OpMode", "0" },
@@ -235,7 +235,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_HT_AMSDU", "0" },
 	{ "wl_HT_BAWinSize", "64" },
 #endif
-	{ "wl_HT_80211KV", "1" },
+	{ "wl_HT_80211KV", "0" },
 	{ "wl_HT_80211R", "0" },
 	{ "wl_HT_MpduDensity", "5" },
 	{ "wl_HT_AutoBA", "1" },
@@ -297,7 +297,7 @@ struct nvram_pair router_defaults[] = {
 	{ "rt_wme_no_ack", "off" },
 	{ "rt_IgmpSnEnable", "1" },
 	{ "rt_TxPower", "100" },
-	{ "rt_TxBurst", "1" },
+	{ "rt_TxBurst", "0" },
 	{ "rt_PktAggregate", "1" },
 	{ "rt_APSDCapable", "0" },
 	{ "rt_auth_mode", "psk" },
@@ -334,7 +334,7 @@ struct nvram_pair router_defaults[] = {
 	{ "rt_HT_RDG", "0" },
 	{ "rt_HT_AMSDU", "0" },
 	{ "rt_HT_MpduDensity", "5" },
-	{ "rt_HT_80211KV", "1" },
+	{ "rt_HT_80211KV", "0" },
 	{ "rt_HT_80211R", "0" },
 #if defined (USE_WID_2G) && (USE_WID_2G==7615 || USE_WID_2G==7915)
 	{ "rt_HT_BAWinSize", "256" },
@@ -419,7 +419,7 @@ struct nvram_pair router_defaults[] = {
 	{ "hdd_spindt", "0" },
 	{ "hdd_apmoff", "0" },
 
-	{ "ip6_service", "dhcp6" },			/* IPV6 */
+	{ "ip6_service", "disable" },			/* IPV6 */
 	{ "ip6_wan_if", "0" },
 
 	{ "ip6_6in4_remote", "" },
@@ -979,7 +979,7 @@ struct nvram_pair router_defaults[] = {
 #endif
 
 	{ "telnetd", "0" },
-	{ "sshd_enable", "1" },
+	{ "sshd_enable", "0" },
 	{ "wins_enable", "0" },
 	{ "lltd_enable", "1" },
 	{ "adsc_enable", "0" },
@@ -1049,7 +1049,7 @@ struct nvram_pair router_defaults[] = {
 	{ "hw_nat_mode", "1" },
 	{ "sw_nat_mode", "0" },
 #if defined(USE_SFE)
-	{ "sfe_enable", "2" },
+	{ "sfe_enable", "0" },
 #endif
 	{ "fw_syn_cook", "0" },
 	{ "fw_mac_drop", "0" },
